@@ -3,11 +3,15 @@ const app = express();
 const MongoClient = require('mongodb').MongoClient;
 const createRouter = require('./helpers/create_router.js');
 const cors = require('cors')
+const uri = process.env.MONGODB_URI;
 
 app.use(express.json());
 app.use(cors());
 
-MongoClient.connect('mongodb://127.0.0.1:27017', { useUnifiedTopology: true })
+MongoClient.connect(uri, { 
+  useNewUrlParser: true,
+  useUnifiedTopology: true 
+})
 .then((client) => {
   const db = client.db('sale_tracker');
 

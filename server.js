@@ -1,8 +1,17 @@
 const express = require('express');
 const app = express();
-const MongoClient = require('mongodb').MongoClient;
+// const MongoClient = require('mongodb').MongoClient;
 const createRouter = require('./helpers/create_router.js');
-const cors = require('cors')
+const cors = require('cors');
+
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://vercel-admin-user:clF6IfmouCk3tEub@clusterctns.ebn9zmk.mongodb.net/?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
 
 app.use(express.json());
 app.use(cors());

@@ -1,4 +1,4 @@
-use sale_tracker;
+use test;
 // db.dropDatabase();
 
 db.shop.insertMany([

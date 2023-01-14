@@ -8,9 +8,9 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://vercel-admin-user:clF6IfmouCk3tEub@clusterctns.ebn9zmk.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 client.connect(err => {
-  const collection = client.db("test").collection("devices");
+  
   // perform actions on the collection object
-  const db = client.db('sale_tracker');
+  const db = client.db('test');
 
   const shopCollection = db.collection('shop');
   const productsCollection = db.collection('products');

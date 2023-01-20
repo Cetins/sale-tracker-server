@@ -1,4 +1,4 @@
-use test;
+use sale_tracker;
 // db.dropDatabase();
 
 db.shop.insertMany([
@@ -74,38 +74,38 @@ db.services.insertMany([
     },
 ])
 
-// db.staff.insertMany([
-//     {
-//         name: "Husso",
-//         sales: 0,
-//         service_commission: 0,
-//         product_commission: 0,
-//     },
-//     {
-//         name: "Tracey",
-//         sales: 0,
-//         service_commission: 50,
-//         product_commission: 5,
-//     }
-// ])
+db.staff.insertMany([
+    {
+        name: "Husso",
+        sales: 0,
+        service_commission: 0,
+        product_commission: 0,
+    },
+    {
+        name: "Tracey",
+        sales: 0,
+        service_commission: 50,
+        product_commission: 5,
+    }
+])
 
-// db.sales.insertMany([
-//     {
-//         category: "service",
-//         title: "test service",
-//         service_id: 121212,
-//         price: 30,
-//         staff: "test staff",
-//         staffId: 1234,
-//         date: "01/01/2022"
-//     },
-//     {
-//         category: "product",
-//         title: "test product",
-//         product_id: 01234567,
-//         price: 5,
-//         staff: "test staff",
-//         staffId: 1234,
-//         date: "01/01/2022"
-//     }
-// ])
+db.sales.insertMany([
+    {
+        category: "service",
+        title: "test service",
+        service_id: 121212,
+        price: 30,
+        staff: "test staff",
+        staffId: 1234,
+        date: "01/01/2022"
+    },
+    {
+        category: "product",
+        title: "test product",
+        product_id: 01234567,
+        price: 5,
+        staff: "test staff",
+        staffId: 1234,
+        date: "01/01/2022"
+    }
+])

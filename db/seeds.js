@@ -1,5 +1,5 @@
 use sale_tracker;
-// db.dropDatabase();
+db.dropDatabase();
 
 db.shop.insertMany([
     {

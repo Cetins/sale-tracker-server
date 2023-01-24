@@ -8,6 +8,57 @@ db.shop.insertMany([
     }
 ])
 
+db.staff.insertMany([
+    {
+        name: "Husso",
+        email: "huseyinsezencetin@gmail.com",
+        category: "Self-employed",
+        service_percentage: 0,
+        product_percentage: 0,
+    },
+    {
+        name: "Tracey",
+        email: "tracey@mail.com",
+        category: "Self-employed",
+        service_percentage: 50,
+    },
+    {
+        name: "Christine",
+        email: "chris@mail.com",
+        category: "Wages",
+        wages_per_hour: 9.5,
+        product_percentage: 5,
+    }
+])
+
+db.services.insertMany([
+    {
+        title: "Cut & Style",
+        duration: 30,
+        price: 35
+    },
+    {
+        title: "Beard Trim",
+        duration: 20,
+        price: 20
+    },
+    {
+        title: "Kid's Haircut",
+        duration: 20,
+        price: 25
+    },
+    {
+        title: "Hot Towel Shave",
+        duration: 45,
+        price: 32
+    },
+    {
+        title: "Vip Pampering Package",
+        duration: 90,
+        price: 70
+    },
+])
+
 db.products.insertMany([
     {
         title: "Sea Salt Spray",
@@ -46,54 +97,11 @@ db.products.insertMany([
     }
 ])
 
-db.services.insertMany([
-    {
-        title: "Cut & Style",
-        duration: 30,
-        price: 35
-    },
-    {
-        title: "Beard Trim",
-        duration: 20,
-        price: 20
-    },
-    {
-        title: "Kid's Haircut",
-        duration: 20,
-        price: 25
-    },
-    {
-        title: "Hot Towel Shave",
-        duration: 45,
-        price: 32
-    },
-    {
-        title: "Vip Pampering Package",
-        duration: 90,
-        price: 70
-    },
-])
-
-db.staff.insertMany([
-    {
-        name: "Husso",
-        sales: 0,
-        service_commission: 0,
-        product_commission: 0,
-    },
-    {
-        name: "Tracey",
-        sales: 0,
-        service_commission: 50,
-        product_commission: 5,
-    }
-])
-
 db.sales.insertMany([
     {
         category: "service",
         title: "test service",
-        service_id: 121212,
+        serviceId: 121212,
         price: 30,
         staff: "test staff",
         staffId: 1234,
@@ -102,7 +110,7 @@ db.sales.insertMany([
     {
         category: "product",
         title: "test product",
-        product_id: 01234567,
+        productId: 01234567,
         price: 5,
         staff: "test staff",
         staffId: 1234,

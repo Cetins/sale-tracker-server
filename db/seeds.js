@@ -97,7 +97,7 @@ db.sales.insertMany([
         price: 30,
         staff: "test staff",
         staffId: 1234,
-        date: "01-01-2022"
+        date: "2022-01-01"
     },
     {
         category: "product",
@@ -106,6 +106,6 @@ db.sales.insertMany([
         price: 5,
         staff: "test staff",
         staffId: 1234,
-        date: "01-01-2022"
+        date: "2022-01-01"
     }
 ])

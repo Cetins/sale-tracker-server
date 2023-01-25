@@ -4,7 +4,8 @@ db.dropDatabase();
 db.shop.insertMany([
     {
         name: "Brush Barbers",
-        email: "brushbarbers@mail.com"
+        email: "brushbarbers@mail.com",
+        passCode: "1234"
     }
 ])
 
@@ -114,6 +115,13 @@ db.sales.insertMany([
         price: 5,
         staff: "test staff",
         staffId: 1234,
+        date: "2022-01-01"
+    }
+])
+
+db.logs.insertMany([
+    {
+        content: "all logs will be collected here.",
         date: "2022-01-01"
     }
 ])

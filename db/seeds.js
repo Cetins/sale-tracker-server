@@ -66,35 +66,40 @@ db.products.insertMany([
         manufacturer: "company ltd",
         price: 18,
         cost: 9,
-        stock: 23
+        stock: 23,
+        sold: 0
     },
     {
         title: "Hair Pomade",
         manufacturer: "company ltd",
         price: 12,
         cost: 4.8,
-        stock: 9
+        stock: 9,
+        sold: 0
     },
     {
         title: "Clay",
         manufacturer: "company ltd",
         price: 12,
         cost: 5,
-        stock: 8
+        stock: 8,
+        sold: 0
     },
     {
         title: "Wax",
         manufacturer: "company ltd",
         price: 15,
         cost: 10,
-        stock: 3
+        stock: 3,
+        sold: 0
     },
     {
         title: "Beard Oil",
         manufacturer: "company ltd",
         price: 15,
         cost: 7,
-        stock: 3
+        stock: 3,
+        sold: 0
     }
 ])
 

@@ -1,2 +1,1 @@
-# sale-tracker-front-end
-# sale-tracker-server
+## sale-tracker-client repo => https://github.com/Cetins/sale-tracker-client

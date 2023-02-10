@@ -70,7 +70,7 @@ npm run seeds
 After all these commands your project should be ready to run. 
 
 To run your server you can use ```npm run server:dev``` command from the root of the sale-tracker-server directory.
-To run your client you can use ``` npm start``` command from the root of the sale-tracker-client directory.
+To run your client you can use ```npm start``` command from the root of the sale-tracker-client directory.
 
 I would personally open two seperate terminal windows and run server and client. I don't like to clutter my code editor's internal terminal and save it for git commands.
 

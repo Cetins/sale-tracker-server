@@ -17,6 +17,5 @@
     "mongodb": "^3.5.7",
     "nodemon": "^2.0.19"
   },
-  "devDependencies": {},
   "description": ""
 }

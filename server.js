@@ -11,22 +11,13 @@ MongoClient.connect('mongodb://127.0.0.1:27017', { useUnifiedTopology: true })
 .then((client) => {
   const db = client.db('sale_tracker');
 
-  const shopCollection = db.collection('shop');
-  const productsCollection = db.collection('products');
-  const servicesCollection = db.collection('services');
-  const staffCollection = db.collection('staff');
+  const shopsCollection = db.collection('shops');
   const salesCollection = db.collection('sales');
 
-  const shopRouter = createRouter(shopCollection);
-  const productsRouter = createRouter(productsCollection);
-  const servicesRouter = createRouter(servicesCollection);
-  const staffRouter = createRouter(staffCollection);
+  const shopRouter = createRouter(shopsCollection);
   const salesRouter = createRouter(salesCollection);
 
-  app.use('/api/shop', shopRouter);
-  app.use('/api/products', productsRouter);
-  app.use('/api/services', servicesRouter);
-  app.use('/api/staff', staffRouter);
+  app.use('/api/shops', shopRouter);
   app.use('/api/sales', salesRouter);
 })
 .catch(console.error);

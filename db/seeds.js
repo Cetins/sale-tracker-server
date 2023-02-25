@@ -159,7 +159,6 @@ db.dropDatabase();
 
 // db.sales.insertMany([]);
 
-
 db.shops.insertMany([
     {
         title: "Demo Barbers",
